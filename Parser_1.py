@@ -35,7 +35,7 @@ def _link_list(block):  # Собирает из основного блока wi
 
 
 def _main(link):  # Переходит на страницы, где есть названия статей
-    while len(href_list) < 1000:
+    while len(href_list) < 15000:
         response = requests.get(link)
         link = 'https://ru.wikipedia.org/'
         soup = BeautifulSoup(response.text, 'lxml')
